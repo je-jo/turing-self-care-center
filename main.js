@@ -1,6 +1,8 @@
-var btnGetMessage = document.querySelector(".receive-message");
+var btnGetMessage = document.querySelector(".btn-submit");
 var form = document.querySelector("form");
-var output = document.querySelector(".output")
+var output = document.querySelector(".output");
+var outputImg = document.querySelector(".output-image")
+var outputText = document.querySelector(".output-text");
 var currentType;
 var currentMessage;
 
@@ -21,7 +23,8 @@ function getMessage() {
 }
 
 function renderMessage() {
-    output.textContent = currentMessage;
+    outputImg.classList.add("hidden");
+    outputText.textContent = currentMessage;
 }
 
 function getRandomIndex(array) {
