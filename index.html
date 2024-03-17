@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-  
-    <script type="text/javascript" src="main.js"></script>
-  </body>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Self Care Center</h1>
+  </header>
+  <main>
+    <form action="">
+      <fieldset>
+        <legend>Which type of message?</legend>
+        <div class="controls">
+          <div class="controls-radio">
+            <input type="radio" name="message-type" id="affirmation" value="affirmation">
+            <label for="affirmation">affirmation</label>
+          </div>
+          <div class="controls-radio">
+            <input type="radio" name="message-type" id="mantra" value="mantra">
+            <label for="mantra">mantra</label>
+          </div>
+        </div>
+        <button type="submit" class="receive-message">Receive message</button>
+      </fieldset>
+    </form>
+    <section class="output">
+      <img src="assets/meditate.svg" alt="" width="300px">
+    </section>
+  </main>
+  <footer>
+    <p><small><a href="https://turing.edu/" target="_blank">Turing School Project</a>. Coded by <a
+          href="https://github.com/je-jo" target="_blank">Jelena Jovičić</a>, 2024.</small></p>
+  </footer>
+  <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
 </html>
