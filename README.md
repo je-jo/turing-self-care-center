@@ -2,23 +2,35 @@
 
 ### Abstract:
 
-The spec for this project can be found [here](https://frontend.turing.edu/projects/module-1/self-care-center.html).
+This app prints a random affirmative message from a list of possible messages. Users can choose between affirmations and mantras. Affirmations are thoughts of positive self-empowerment, meant to assert your self-worth. Mantras are repetive phrases that are repeated again and again during mindfulness practices.
 
-[//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
+This is a learning project from Turing School Module 1. The spec can be found [here](https://frontend.turing.edu/projects/module-1/self-care-center.html).
 
 ### Preview of App:
-[//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
+
+![](/screenshot.png)
 
 ### Learning Goals:
-[//]: <> (What were the learning goals of this project? What tech did you work with?)
+
 - Gain experience building an application that utilizes HTML, CSS and JavaScript
 - Write HTML and CSS to match a provided comp
 - Understand how to listen to and respond to user events
 - Individualize your programming skill set
 
-### Wins + Challenges:
-[//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+### Workflow
 
-### Useful Links:
+Complete the MVP and at least one "Choose Your Own Adventure" Feature:
+
+1. Minimum Viable Product (MVP) 
+
+- [x] Add Random Affirmation and Mantra feature
+When a user selects a message option and then clicks the “Receive Message” button, the user sees a random message from the list of possible messages for that category
+- [x] When the message appears, the mediation icon disappears from the message area.
+
+2. User never sees a repeated message (CYOA)
+- [ ] Use JavaScript to ensure that the user never sees a repeated message until they’ve seen them all.
+- [ ] After they’ve seen them all they should be notified that they will now start seeing repeat messages.
+
+### Helpful Links:
 
 [Josh Comeau's Gradient Generator](https://www.joshwcomeau.com/gradient-generator/)
