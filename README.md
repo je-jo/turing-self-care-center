@@ -6,6 +6,10 @@ This app prints a random affirmative message from a list of possible messages. U
 
 This is a learning project from Turing School Module 1. The spec can be found [here](https://frontend.turing.edu/projects/module-1/self-care-center.html).
 
+### Live Page
+
+[Self-Care Center](https://je-jo.github.io/turing-self-care-center/)
+
 ### Preview of App:
 
 ![](/screenshot.png)
@@ -28,8 +32,12 @@ When a user selects a message option and then clicks the “Receive Message” b
 - [x] When the message appears, the mediation icon disappears from the message area.
 
 2. User never sees a repeated message (CYOA)
-- [ ] Use JavaScript to ensure that the user never sees a repeated message until they’ve seen them all.
-- [ ] After they’ve seen them all they should be notified that they will now start seeing repeat messages.
+- [x] Use JavaScript to ensure that the user never sees a repeated message until they’ve seen them all.
+- [x] After they’ve seen them all they should be notified that they will now start seeing repeat messages.
+
+### Wins & Challenges
+
+Learned about cloning an array and not to change the value of function parameter.
 
 ### Helpful Links:
 

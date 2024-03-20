@@ -3,23 +3,34 @@ var form = document.querySelector("form");
 var output = document.querySelector(".output");
 var outputImg = document.querySelector(".output-image")
 var outputText = document.querySelector(".output-text");
-var currentType;
 var currentMessage;
+var chosenArray;
+var uniqueAffirmations = affirmations.slice();
+var uniqueMantras = mantras.slice();
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-    getMessage();
+    var currentType = form.querySelector(":checked").value;
+    if (currentType === "affirmation") {
+        if (!uniqueAffirmations.length) {
+            uniqueAffirmations = copyArray(affirmations);
+        } else {
+            getMessage(uniqueAffirmations);
+        }
+    } else if (currentType === "mantra") {
+        if (!uniqueMantras.length) {
+            uniqueMantras = copyArray(mantras)
+        } else {
+            getMessage(uniqueMantras);
+        }
+    }
     renderMessage();
 });
 
-function getMessage() {
-    currentType = form.querySelector(":checked").value;
-    if (currentType === "affirmation") {
-        currentMessage = affirmations[getRandomIndex(affirmations)];
-    } else {
-        currentMessage = mantras[getRandomIndex(mantras)];
-    }
-    return currentMessage;
+function getMessage(array) {
+    var currentRandomIndex = getRandomIndex(array);
+    currentMessage = array[currentRandomIndex];
+    array.splice(currentRandomIndex, 1);
 }
 
 function renderMessage() {
@@ -28,5 +39,10 @@ function renderMessage() {
 }
 
 function getRandomIndex(array) {
-    return Math.floor(Math.random() * array.length)
+    return Math.floor(Math.random() * array.length);
+}
+
+function copyArray(source) {
+    currentMessage = "You will now start seeing repeated messages...";
+    return source.slice();
 }
